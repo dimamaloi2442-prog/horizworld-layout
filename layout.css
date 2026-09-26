@@ -13,6 +13,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  transition: background 0.3s, color 0.3s;
 }
 
 /* Шапка */
@@ -24,6 +25,7 @@ body {
   height: 60px;
   background: #1e1e1e;
   color: white;
+  transition: background 0.3s, color 0.3s;
 }
 
 .logo {
@@ -58,6 +60,13 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  
 }
 
 .card h3 {
@@ -73,6 +82,7 @@ body {
   color: gray;
   font-size: 12px;
   text-align: center;
+  transition: background 0.3s, color 0.3s;
 }
 
 .footer p {
@@ -83,5 +93,42 @@ body {
   .cards {
     flex-direction: column;
   }
+  .menu {
+    gap: 10px;
+    font-size: 14px;
+  }
+}
+
+body.dark {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark .card {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}
+
+body.dark .header,
+body.dark .footer {
+  background: #000;
+}
+
+body.dark .card h3 {
+  color: #b794f4;
+}
+
+.theme-btn {
+  background: #667eea;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.theme-btn:hover {
+  background:#764ba2;
 }
 
