@@ -97,6 +97,15 @@ body {
     gap: 10px;
     font-size: 14px;
   }
+  .hero {
+    padding: 50px 20px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
 }
 
 body.dark {
@@ -118,6 +127,10 @@ body.dark .card h3 {
   color: #b794f4;
 }
 
+body.dark .hero {
+  background: linear-gradient(135deg, #4a3a7a, #2a1a4a);
+}
+
 .theme-btn {
   background: #667eea;
   color: #e0e0e0;
@@ -129,6 +142,39 @@ body.dark .card h3 {
 }
 
 .theme-btn:hover {
-  background:#764ba2;
+  background:#3356f0;
 }
 
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #610479, #a57cce);
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin: 0 0 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 0 0 24px;
+  color: white;
+}
+
+.hero-btn {
+  background: #667eea;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background: #3356f0;
+  transform: translateY(-2px);
+}
