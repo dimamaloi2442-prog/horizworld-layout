@@ -178,3 +178,70 @@ body.dark .hero {
   background: #3356f0;
   transform: translateY(-2px);
 }
+
+.cards-header {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px 0;
+}
+
+.add-card-btn {
+  background: #764ba2;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.add-card-btn:hover {
+  background: #667eea;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 12px;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input-title,
+.input-desc {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+}
+
+.input-title {
+  width: 200px;
+}
+
+.input-desc {
+  width: 300px;
+}
+
+.input-title:focus,
+.input-desc:focus {
+  border-color: #764ba2;
+}
